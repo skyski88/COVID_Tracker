@@ -1,0 +1,211 @@
+<!-- Project 1 - Ashley Anness, Jordan Morse, Bradley Williams, Trevor Wallace -->
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Style Sheets -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/style.css">
+  <!--Title-->
+  <title>Tracking COVID-19</title>
+</head>
+
+<body>
+  <!-- NAVBAR SECTION -->
+  <div class="navbar-main">
+    <div class="container">
+      <nav id="navbar-example" class="navbar navbar-expand-lg navbar-light bg-lignt">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/covidLogoSmall.png" alt="virus icon with tracking covid-19">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="cases.html">CASES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="youtube.html">VIDEOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="safety.html">SAFETY</a>
+            </li>
+        </div>
+        </li>
+        </ul>
+    </div>
+    </nav>
+  </div>
+  </div>
+
+  <!--JumboTron -->
+  <div class="jumbotron-container">
+    <div class="row row-jumbotron-container"
+      style="background:transparent url('assets/usa_map.png') no-repeat center center /cover">
+      <div class="col-sm-4 d-block m-auto">
+        <div class="jumbotron-text text-center">
+          <h1>FIND YOUR STATE</h1>
+          <p>Check the COVID-19 numbers in your state.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--States dropdown-->
+  <div class="data-container">
+    <div class="row">
+      <div class="col-sm-4 safety-sidebar">
+        <h4 style="color: ghostwhite;">Educate yourself on COVID-19</h4>
+        <p style="color: white;">Ask questions, educate yourself and listen to information from reliable sources on
+          COVID-19. Educating yourself is the best way to stay safe during this pandemic. Check out the latest videos on <a
+            href="videos.html" style="color: ghostwhite; text-underline-position: below;">COVID-19. </a></p>
+      </div>
+      <div class="col-sm-8 d-block m-auto">
+        <div id="data-container-text">
+          <h5>FIND YOUR STATE</h5>
+          <p>Find your state below to see the most current COVID-19 data. You will see the current cases, death rates
+            and recovered dates. Feel free to browse other states to see how they compare. </p>
+
+
+          <!-- inserting js -->
+          <!-- on click a href="cases.html" -->
+          <select id="mySelect" onchange="myFunction()">
+            <option value="">STATES</option>
+            <option value="Alaska">Alaska</option>
+            <option value="Alabama">Alabama</option>
+            <option value="Arkansas">Arkansas</option>
+            <option value="Arizona">*Arizona</option>
+            <option value="California">California</option>
+            <option value="Colorado">*Colorado</option>
+            <option value="Connecticut">*Connecticut</option>
+            <option value="District of Columbia">District of Columbia</option>
+            <option value="Delaware">Delaware</option>
+            <option value="Florida">*Florida</option>
+            <option value="Georgia">*Georgia</option>
+            <option value="Hawaii">Hawaii</option>
+            <option value="Iowa">Iowa</option>
+            <option value="Idaho">Idaho</option>
+            <option value="Illinois">*Illinois</option>
+            <option value="Indiana">Indiana</option>
+            <option value="Kansas">*Kansas</option>
+            <option value="Kentucky">Kentucky</option>
+            <option value="Louisiana">Louisiana</option>
+            <option value="Massachusetts">Massachusetts</option>
+            <option value="Maryland">*Maryland</option>
+            <option value="Maine">Maine</option>
+            <option value="Michigan">Michigan</option>
+            <option value="Minnesota">Minnesota</option>
+            <option value="Missouri">*Missouri</option>
+            <option value="Mississippi">Mississippi</option>
+            <option value="Montana">Montana</option>
+            <option value="North Carolina">North Carolina</option>
+            <option value="North Dakota">North Dakota</option>
+            <option value="Nebraska">Nebraska</option>
+            <option value="New Hampshire">New Hampshire</option>
+            <option value="New Jersey">*New Jersey</option>
+            <option value="New Mexico">New Mexico</option>
+            <option value="Nevada">*Nevada</option>
+            <option value="New York">New York</option>
+            <option value="Ohio">Ohio</option>
+            <option value="Oklahoma">Oklahoma</option>
+            <option value="Oregon">*Oregon</option>
+            <option value="Pennsylvania">Pennsylvania</option>
+            <option value="Puerto Rico">Puerto Rico</option>
+            <option value="Rhode Island">*Rhode Island</option>
+            <option value="South Carolina">*South Carolina</option>
+            <option value="South Dakota">South Dakota</option>
+            <option value="Tennessee">Tennessee</option>
+            <option value="Texas">*Texas</option>
+            <option value="Utah">Utah</option>
+            <option value="Virginia">*Virginia</option>
+            <option value="Vermont">Vermont</option>
+            <option value="Washington">*Washington</option>
+            <option value="Wisconsin">Wisconsin</option>
+            <option value="West Virginia">West Virginia</option>
+            <option value="Wyoming">Wyoming</option>
+          </select>
+
+          <p id="state"></p>
+          <p id="cases"></p>
+          <p id="deceased"></p>
+          <p id="recovered"></p>
+          <p>NOTE: Not all states are choosing to update each parameter accurately. Thus some results may yield "0." The reasons for each state can be found below.</p>
+            <a href="https://www.kgun9.com/news/local-news/why-doesnt-az-track-covid-19-recoveries" style="color: dimgrey;">Arizona</a> |
+            <a href="https://www.9news.com/article/news/local/next/some-colorado-counties-track-covid-19-recoveries-while-state-doesnt/73-ded6b270-df9c-408a-bc29-4bce56a59891" style="color: dimgrey;">Colorado</a> |
+            <a href="https://news.hamlethub.com/wilton/neighbors/50149-connecticut-covid-19-recovery-number-of-patients-in-hospitals-declines-for-first-time-since-virus-onset"style="color: dimgrey;">Connecticut</a> |
+            <a href="https://www.wjhg.com/content/news/Why-does-Florida-not-report-COVID-19-recoveries-570113181.html" style="color: dimgrey;">Florida</a>  |
+            <a href="https://www.11alive.com/article/news/health/coronavirus/coronavirus-recovery-numbers-georgia-why-we-cant-report-them/85-df3c6861-ce92-442b-9607-2ccffbae07dd" style="color: dimgrey;">Georgia</a>  |
+            <a href="https://www.wjol.com/illinois-does-not-track-coronavirus-recoveries/" style="color: dimgrey;">Illinois</a>  |
+            <a href="https://www.ksn.com/news/health/coronavirus/coronavirus-in-kansas/sedgwick-county-to-stop-listing-coronavirus-recoveries/" style="color: dimgrey;">Kansas</a>  |
+            <a href="https://wtop.com/coronavirus/2020/09/coronavirus-test-results-in-dc-maryland-and-virginia/" style="color: dimgrey;">Maryland</a>  |
+            <a href="https://www.cu-citizenaccess.org/2020/07/10/definitions-of-recovered-from-covid-19-vary-widely-across-the-u-s/" style="color: dimgrey;">Missouri</a>  |
+            <a href="https://www.reviewjournal.com/life/health/coronavirus-recovery-numbers-not-being-tracked-by-all-1997749/" style="color: dimgrey;">Nevada</a>  |
+            <a href="https://whyy.org/articles/n-j-coronavirus-recovery-state-to-survey-air-travelers-from-covid-19-hot-spots/" style="color: dimgrey;">New Jersey</a>  |
+            <a href="https://kcby.com/news/local/debate-over-value-of-recovered-case-stats-for-covid-rises" style="color: dimgrey;">Oregon</a>  |
+            <a href="https://www.timesunion.com/news/article/Those-recovered-unknown-but-coronavirus-deaths-15164613.php" style="color: dimgrey;">Rhode Island</a>  |
+            <a href="https://wpde.com/news/local/sc-state-health-officials-do-not-track-coronavirus-recoveries" style="color: dimgrey;">South Carolina</a>  |
+            <a href="https://www.dallasnews.com/news/public-health/2020/05/19/why-arent-coronavirus-recoveries-always-reported/" style="color: dimgrey;">Texas</a>  |
+            <a href="https://www.btw21.com/post/why-does-the-department-of-health-not-report-covid-19-recoveries#:~:text=The%20Virginia%20Department%20of%20Health,the%20district's%20Population%20Health%20Manager." style="color: dimgrey;">Virgina</a>  |
+            <a href="https://www.khq.com/coronavirus/why-we-havent-been-reporting-the-number-of-coronavirus-recoveries/article_e1c7138c-78fc-11ea-8926-df9e7f5b03b3.html" style="color: dimgrey;">Washington</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Cases Numbers -->
+  <div class="cases-container">
+    <div class="row row-cases-container"
+      style="background:transparent url('assets/covidGraph.png') no-repeat center center /cover">
+      <div class="col-sm-4 d-block m-auto">
+        <div class="cases-count text-center">
+          <h1 id="totalUSCases"></h1>
+          <p>TOTAL U.S. CASES</p>
+        </div>
+      </div>
+      <div class="col-sm-4 d-block m-auto">
+        <div class="cases-count text-center">
+          <h1 id="totalUSDeaths"></h1>
+          <p>TOTAL U.S. DEATHS</p>
+        </div>
+      </div>
+      <div class="col-sm-4 d-block m-auto">
+        <div class="cases-count text-center">
+          <h1 id="recUSCount"></h1>
+          <p>RECOVERED U.S. CASES</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!--footer-->
+  <footer class="footer-row">
+    <div class="footer-text">
+      Copyright ®2020 Created by Bradley Williams, Jordan Morse, Ashley Anness and Trevor Wallace
+    </div>
+  </footer>
+
+  <!--Scripts-->
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+  <script src="youtube.js"></script>
+  <script src="scriptTracker.js"></script>
+</body>

@@ -1,0 +1,124 @@
+<!-- Project 1 - Ashley Anness, Jordan Morse, Bradley Williams, Trevor Wallace -->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Style Sheets -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
+    <!--Title-->
+    <title>Tracking COVID-19</title>
+</head>
+
+<body>
+  <!-- NAVBAR SECTION -->
+  <div class="navbar-main">
+    <div class="container">
+      <nav id="navbar-example" class="navbar navbar-expand-lg navbar-light bg-lignt">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/covidLogoSmall.png" alt="virus icon with tracking covid-19">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cases.html">CASES</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="youtube.html">VIDEOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="safety.html">SAFETY</a>
+            </li>
+        </div>
+        </li>
+        </ul>
+    </div>
+    </nav>
+  </div>
+  </div>
+
+    <!--JumboTron -->
+    <div class="jumbotron-container">
+        <div class="row row-jumbotron-container"
+            style="background:transparent url('assets/Safety_Mask.png') no-repeat center center /cover">
+            <div class="col-sm-4 d-block m-auto">
+                <div class="jumbotron-text text-center">
+                    <h1>WATCH NOW</h1>
+                    <p>Educate yourself on the dangers of COVID-19</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- youtube videos -->
+    <div class="youtube-grid justify-content-center align-items-center text-center">
+        <h5>Check out the latest videos to help you gain knowledge of the virus, how to stay safe and precautionary measures we are taking to battle the pandemic.</h5> 
+        <div class="row yt-container">
+            <div class="col-sm-3 col-lg-6"id="ytplayer1" ></div>
+            <div class="col-sm-3 col-lg-6" id="ytplayer2"></div>
+      </div>
+        <div class="row yt-container">
+            <div class="col-sm-3 col-lg-6" id="ytplayer3"></div>
+            <div class="col-sm-3 col-lg-6" id="ytplayer4"></div>
+      </div>
+    </div>
+
+    <!--Cases Numbers -->
+  <div class="cases-container">
+    <div class="row row-cases-container" style="background:transparent url('assets/covidGraph.png') no-repeat center center /cover">
+      <div class="col-sm-4 d-block m-auto">
+        <div class="cases-count text-center">
+          <h1 id="totalUSCases"></h1>
+          <p>TOTAL U.S. CASES</p>
+        </div>
+      </div>
+      <div class="col-sm-4 d-block m-auto">
+        <div class="cases-count text-center">
+          <h1 id="totalUSDeaths"></h1>
+          <p>TOTAL U.S. DEATHS</p>
+        </div>
+      </div>
+      <div class="col-sm-4 d-block m-auto">
+        <div class="cases-count text-center">
+          <h1 id="recUSCount"></h1>
+          <p>RECOVERED U.S. CASES</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!--footer-->
+  <footer class="footer-row">
+    <div class="footer-text">
+      Copyright ®2020 Created by Bradley Williams, Jordan Morse, Ashley Anness and Trevor Wallace
+    </div>
+  </footer>
+
+  <!--Scripts-->
+  <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"></script>
+    <script src="youtube.js"></script>
+    <script src="scriptTracker.js"></script>
+  </body>

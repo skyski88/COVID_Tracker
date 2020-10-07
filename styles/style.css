@@ -1,0 +1,225 @@
+/* font-family: 'Montserrat', sans-serif; 
+GREEN - #07707F
+light green =#add0d5
+RED - #7A2732 */
+
+h1, h2, h3, h4, h5, p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h5 {
+    font-weight: bold;
+    color: #7A2732;
+}
+
+
+
+
+/* Nav bar */
+.nav-link {
+    color: dimgray;
+    font-family: 'Montserrat', sans-serif;
+} 
+
+.nav-item {
+    color: dimgray;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+.navbar-toggler {
+    color: dimgrey;     
+}
+
+
+
+
+/* Index search state section */
+.search-container {
+    background-color: #7A2732;
+}
+
+.search-conatiner-text {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    padding: 3em;
+    padding-left:5em;
+}
+
+.state-btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    font-family: 'Montserrat', sans-serif; 
+}
+
+.btn-light {
+    font-family: 'Montserrat', sans-serif; 
+    color: dimgrey;
+    padding: 1em;
+    display: block;
+    margin-bottom: 1em;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+
+
+/* 3 Cards */
+.container-cards {
+    padding-top: 3em;
+}
+
+.card {
+    background-color: #F5F5F5;
+    border: none;
+    margin-bottom: 1em;
+}
+
+.card-title {
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: bold;
+    color: #7A2732;
+}
+
+.btn-primary {
+ background-color: #07707f;
+}
+
+.btn-primary:hover {
+    background-color: dimgrey;
+   }
+
+
+
+
+/* Youtube section */
+.youtube-container {
+    background-color: #add0d5;
+    margin-top: 2em;
+    padding:2em;
+}
+
+.youtube-container-text {
+    color: dimgrey;
+    padding-left: 1em;
+}
+
+#ytplayer1 {
+    margin: auto;    
+    display: block;
+}
+
+
+
+
+/* US Cases Count Bottom */
+.row-cases-container {
+    padding: 2em;
+}
+
+.cases-count {
+    font-family: 'Montserrat', sans-serif; 
+    color: white;
+    font-weight: bold;
+}
+
+
+
+
+/* YouTube Page */
+.youtube-grid {
+    margin: 2em;
+}
+
+.yt-container {
+    padding: 2em;
+}
+
+
+
+
+/* Safety Page */
+.row-jumbotron-container {
+    padding: 2em;
+    height: 400px;
+}
+
+.jumbotron-text {
+    color:white;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: bolder;
+    text-shadow: 1px 1px dimgrey;
+}
+
+.safety-list-text {
+    padding:3em;
+}
+
+
+
+
+/* Cases Page */
+.safety-sidebar {
+    background-color: #7A2732;
+    padding: 3em;
+}
+
+#data-container-text {
+    padding: 3em;
+}
+
+#mySelect {
+    color:white;
+    background-color: #07707f;
+    border-radius: .5em;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+#state {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+#cases {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+#deceased {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+#recovered {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+
+
+/* Footer */
+.footer-row {
+    background-color: dimgrey;
+    text-align: center;
+}
+
+.footer-text {
+    color: white;
+    font-weight: medium;
+    padding: 1em;
+}
+
+/* ============ only desktop view ============ */
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{  display:block; opacity: 0;  visibility: hidden; transition:.3s; margin-top:0;  }
+	.navbar:hover .nav-item:hover .nav-link{ color: #07707f;  }
+	.navbar .dropdown-menu.fade-down{ top:80%; transform: rotateX(-75deg); transform-origin: 0% 0%; }
+	.navbar .dropdown-menu.fade-up{ top:180%;  }
+	.navbar .nav-item:hover .dropdown-menu{ transition: .3s; opacity:1; visibility:visible; top:100%; transform: rotateX(0deg); }
+}		
+/* ============ desktop view .end// ============ */
